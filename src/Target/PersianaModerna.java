@@ -5,17 +5,20 @@ public class PersianaModerna {
 	private boolean conectarLuz = false;
 	
 	public PersianaModerna () {
+		
 		System.out.println("Conectandose a la luz...");
 		this.conectarLuz = false;
 		
 	}
 	
 	public void conectar () {
+		
 		System.out.println("Persiana Conectada");
 		this.conectarLuz= true;
 	}
 	
 	public void activar() {
+		
 		if(!this.conectarLuz) {
 			System.out.println("No se ha conectado a la luz");
 		}else {
@@ -25,14 +28,16 @@ public class PersianaModerna {
 	}
 	
 	public void ajustar () {
+		
 		if(!this.conectarLuz) {
 			System.out.println("No se ha conectado a la luz");
 		}else {
-			System.out.println("Ajustando la posicion");
+			System.out.println("Ajustando persiana en la posicion indicada");
 		}
 	}
 	
 	public void desactivando() {
+		
 		if(!this.conectarLuz) {
 			System.out.println("No se ha conectado a la luz");
 		}else {
@@ -42,6 +47,7 @@ public class PersianaModerna {
 	}
 	
 	public void desconectar () {
+		
 		System.out.println("Persiana desconectada");
 		this.conectarLuz= false;
 	}

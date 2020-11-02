@@ -11,23 +11,25 @@ public class PersianaModernaAdapter extends Persiana{
 
 	@Override
 	public void subir() {
-		System.out.println("subiendo persiana Adapter");
+		System.out.println("\n Activando persiana Adapter");
 		this.persianaModerna.conectar();
 		this.persianaModerna.activar();
 		
 	}
 
+	
+	@Override
+	public void mantener() {
+		System.out.println("\n Ajustando persiana Adapter");
+		this.persianaModerna.ajustar();
+	}
+	
 	@Override
 	public void bajar() {
-		System.out.println("Bajando persiana Adapter");
+		System.out.println("\n Bajando persiana Adapter");
 		this.persianaModerna.desactivando();
 		this.persianaModerna.desconectar();
 	}
 
-	@Override
-	public void mantener() {
-		System.out.println("ajustando persiana Adapter");
-		this.persianaModerna.ajustar();
-	}
 
 }
